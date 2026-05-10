@@ -61,6 +61,22 @@ Built with a modular architecture using React, TypeScript, Node.js, Socket.IO, a
 
 ---
 
+## 📸 Application Screenshots
+
+🔐 Login Page
+
+![alt text](image.png)
+
+🌙 Dashboard — Dark Theme
+
+![alt text](image-1.png)
+
+☀️ Dashboard — Responsive Web Design (RWD)
+
+![alt text](image-2.png)
+
+---
+
 # 🛠️ Technology Stack
 
 ## Frontend
