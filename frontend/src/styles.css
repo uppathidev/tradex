@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply box-border;
+  }
+
+  html, body, #root {
+    @apply h-full;
+  }
+
+  body {
+    @apply bg-dark-950 text-dark-300 font-mono transition-colors duration-300;
+  }
+
+  ::-webkit-scrollbar {
+    @apply w-1;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-dark-900;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-dark-700 rounded-sm;
+  }
+
+  input[type='number']::-webkit-inner-spin-button,
+  input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+@layer components {
+  .input-trading {
+    @apply w-full bg-dark-900 border border-dark-700 rounded-lg px-3.5 py-2.5 text-dark-300 text-lg outline-none transition-colors duration-200 font-mono;
+    @apply focus:border-primary focus:ring-1 focus:ring-primary/50;
+  }
+
+  .button-secondary {
+    @apply bg-none border border-dark-700 rounded text-dark-600 text-sm px-2.5 py-1 cursor-pointer font-mono tracking-widest transition-colors duration-200;
+    @apply hover:border-primary hover:text-primary;
+  }
+
+  .button-primary {
+    @apply bg-primary text-dark-950 font-bold px-3 py-2 rounded-lg transition-all duration-200;
+    @apply hover:shadow-glow;
+  }
+
+  .card {
+    @apply bg-dark-900 border border-dark-700 rounded-xl transition-colors duration-200;
+  }
+
+  .ticker-row {
+    @apply px-4 py-3 border-b border-dark-700 cursor-pointer transition-all duration-150;
+    @apply hover:bg-dark-900/50;
+  }
+
+  .ticker-row.selected {
+    @apply bg-dark-900 border-l-2 border-l-primary;
+  }
+}
